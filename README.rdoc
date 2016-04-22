@@ -1,5 +1,10 @@
 == README
 
+This is my first Rails project. I'm a certified computer science expert - subject area: system integration.
+At the time of writing this I'm unemployed. To qualify for more positions I'm attending a web developer course and this project is a part of it.
+
+For now I will leave the standard text below unchanged, just in case I will edit this readme according to the steps mentioned there later on.
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
