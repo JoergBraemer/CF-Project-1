@@ -76,4 +76,7 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # fix for missing secret token error
+  config.secret_key_base = ENV["SECRET_KEY_BASE"]
 end
