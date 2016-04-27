@@ -16,6 +16,17 @@ html, body {
   content: "";
   display: block;
 }
+
+.navbar-brand a,
+.navbar-brand a:focus {
+  color: white;
+  text-decoration: none;
+}
+.navbar-brand a:hover {
+  color: #ff0;
+  text-decoration: none;
+}
+
 .site-footer, .page-wrap:after {
   height: 40px; 
 }
