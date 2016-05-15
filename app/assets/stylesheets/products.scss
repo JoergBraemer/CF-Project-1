@@ -17,8 +17,13 @@ p, strong {
 .product-box {
     outline: 2px solid orange;
 }
-
 .options p {
   font-family: 'Open Sans', Futura, Helvetica, Arial, sans-serif;
   font-size: 0.9em;
+}
+.firstline {	
+  padding-top: 60px;
+}
+.data p {
+	text-align: left;
 }

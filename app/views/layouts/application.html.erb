@@ -24,16 +24,42 @@
       		<span class="icon-bar"></span>
     		</button>
     		<div class="navbar-brand">
-      		<a href="#">Fictional Bike Shop</a>
+    			<%= link_to "Fictional Bike Shop", root_path %>
+      		<!-- <a href="#">Fictional Bike Shop</a> -->
     		</div>
   		</div>
   		<div class="navbar-collapse collapse">
     		<ul class="nav navbar-nav">
-     			<li><a href="/"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-     			<li><a href="/products"><span class="glyphicon glyphicon-gift"></span> Products</a></li>
-     			<li><a href="/orders"><span class="glyphicon glyphicon-shopping-cart"></span> Orders</a></li>
-      		<li><a href="/static_pages/about/"><span class="glyphicon glyphicon-info-sign"></span> About</a></li>
-      		<li><a href="/static_pages/contact/"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li>
+     			<!-- <li><a href="/static_pages/index.html"><span class="glyphicon glyphicon-home"></span> Home</a></li> -->
+     			<li>
+      			<%= link_to static_pages_index_path do %>
+            	<span class="glyphicon glyphicon-Home"></span>&nbsp;Home
+            <% end %>
+          </li>
+     			<!-- <li><a href="/products"><span class="glyphicon glyphicon-gift"></span> Products</a></li> -->
+     			<li>
+      			<%= link_to products_path do %>
+            	<span class="glyphicon glyphicon-gift"></span>&nbsp;Products
+            <% end %>
+          </li>
+     			<!-- <li><a href="/orders"><span class="glyphicon glyphicon-shopping-cart"></span> Orders</a></li> -->
+     			<li>
+      			<%= link_to orders_path do %>
+            	<span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Orders
+            <% end %>
+          </li>
+      		<!-- <li><a href="/static_pages/about/"><span class="glyphicon glyphicon-info-sign"></span> About</a></li> -->
+      		<li>
+      			<%= link_to static_pages_about_path do %>
+            	<span class="glyphicon glyphicon-info-sign"></span>&nbsp;About
+            <% end %>
+          </li>
+      		<!-- <li><a href="/static_pages/contact/"><span class="glyphicon glyphicon-envelope"></span> Contact</a></li> -->
+      		<li>
+      			<%= link_to static_pages_contact_path do %>
+            	<span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact
+            <% end %>
+          </li>
     		</ul>
   		</div>
   	</div>

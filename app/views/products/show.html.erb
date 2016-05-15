@@ -1,4 +1,13 @@
-<p class="firstline" id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8 col-md-8">
+
+<%= image_tag(@product.image_url, class: "product-image img-responsive firstline") %>
+
+</div>
+
+<div class="col-sm-4 col-md-4 data">
+<p id="notice" class="firstline"><%= notice %></p>
 
 <p>
   <strong>Name:</strong>
@@ -24,8 +33,9 @@
   <strong>Price:</strong>
   <%= @product.price %>
 </p>
-
-<%= image_tag(@product.image_url, class: "product-image img-responsive") %>
+</div>
+</div>
 
 <%= link_to 'Edit', edit_product_path(@product) %> |
 <%= link_to 'Back', products_path %>
+</div>
