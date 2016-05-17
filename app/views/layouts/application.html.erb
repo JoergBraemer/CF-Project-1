@@ -59,8 +59,15 @@
       			<%= link_to static_pages_contact_path do %>
             	<span class="glyphicon glyphicon-envelope"></span>&nbsp;Contact
             <% end %>
-          </li>
+          </li>                  
     		</ul>
+    		<div class="navbar-form navbar-right">
+          <%= form_tag("/products", method: "get") do %>
+  					<%= label_tag(:q, "Search for:") %>
+  					<%= text_field_tag(:q) %>
+  					<%= submit_tag("Search") %>
+					<% end %>
+				</div>
   		</div>
   	</div>
   </nav>

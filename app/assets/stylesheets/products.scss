@@ -24,6 +24,22 @@ p, strong {
 .firstline {	
   padding-top: 60px;
 }
-.data p {
+.data p, .new_prod {
 	text-align: left;
+}
+.multiline {
+	min-height: 80px;
+}
+label {
+	font-family: 'Open Sans', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+  color: black;
+  padding-top: 10px;
+}
+.form-control {
+	background: rgb(240, 240, 255);
+	color: black;
+}
+.btn-primary {
+	margin-top: 10px;
 }
