@@ -79,5 +79,16 @@ Rails.application.configure do
 
   # fix for missing secret token error
   config.secret_key_base = ENV["SECRET_KEY_BASE"]
-  
+
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address:              'smtp.gmail.com',
+    port:                 587,
+    domain:               'example.com',
+    user_name:            '<username>',
+    password:             '<password>',
+    authentication:       'plain',
+    enable_starttls_auto: true  }
+
+
 end
