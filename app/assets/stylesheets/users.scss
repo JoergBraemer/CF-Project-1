@@ -1,0 +1,20 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+label {
+	font-family: 'Open Sans', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+  color: black;
+  padding-top: 10px;
+}
+.form-control {
+	background: rgb(240, 240, 255);
+	color: black;
+}
+.btn-primary {
+	margin-top: 10px;
+}
+.row {
+	padding: 0 10px;
+}

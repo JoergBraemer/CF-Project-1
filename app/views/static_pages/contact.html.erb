@@ -1,4 +1,4 @@
-<h1 class="firstline">Contact Us</h1>
+<h1>Contact Us</h1>
 
 <%= flash[:notice] %>
 
@@ -17,16 +17,18 @@
       <%= label_tag :message, "Message" %>
       <%= text_area_tag :message, nil, class: "form-control", placeholder: "Enter Message" %>
     </div>      
+  	<%= submit_tag "Send", class: "btn btn-primary" %>
   </div>
+
+	
+
 	<div class="col-md-4">
 		<h2>Jörg Brämer</h2>
 		<h2>Hebbelstraße 1</h2>
 		<h2>31582 Nienburg</h2>
 		<h2>joerg.braemer@online.de</h2>
 	</div>
+
 </div>
-
-<%= submit_tag "Send", class: "btn btn-primary" %>
-
 <% end %>
 
