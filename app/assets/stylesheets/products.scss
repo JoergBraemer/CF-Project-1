@@ -8,6 +8,7 @@ table, th, td {
 
 p, strong {
   text-align: center;
+  color: black;
 }
 
 .product-image {
@@ -42,4 +43,18 @@ label {
 }
 .btn-primary {
 	margin-top: 10px;
+}
+.glyphicon {
+	color: cornflowerblue;
+	font-size: 1.3em;
+	padding-right: 5px;
+}
+.data {
+	padding-top: 10px;
+}
+
+.data p {
+	font-family: 'Open Sans', Futura, Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+  color: black;
 }
