@@ -1,0 +1,22 @@
+<% if signed_in? %>
+  <h4 class="reviews-top">Add a review:</h4>
+  <%= form_for([@product, @product.comments.build]) do |f| %>
+
+    <p>
+      <%= f.label :body, "Comments" %>
+    </p>
+
+    <p>
+      <%= f.text_area :body, class: "form-control multiline", placeholder: "Enter your comment here." %>
+    </p>
+
+    <p>
+      <div class="rating"></div>
+    </p>
+
+    <p>
+      <%= f.submit "Submit", class: "btn btn-primary" %>
+    </p>
+
+  <% end %>
+<% end %>

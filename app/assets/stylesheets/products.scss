@@ -25,9 +25,6 @@ p, strong {
 .firstline {	
   padding-top: 60px;
 }
-.data p, .new_prod {
-	text-align: left;
-}
 .multiline {
 	min-height: 80px;
 }
@@ -52,9 +49,19 @@ label {
 .data {
 	padding-top: 10px;
 }
-
+.data p, .new_prod {
+	text-align: left;
+}
 .data p {
 	font-family: 'Open Sans', Futura, Helvetica, Arial, sans-serif;
 	font-size: 1.3em;
   color: black;
+}
+.reviews-top {
+	padding-top: 20px;
+}
+.comments-caption {
+	font-family: 'Open Sans', Futura, Helvetica, Arial, sans-serif;
+	padding-bottom: 5px;
+	font-size: 1.3em;
 }
