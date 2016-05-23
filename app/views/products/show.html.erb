@@ -33,10 +33,17 @@
         <%= @product.price %>
       </p>
 
+      <h3>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </h3>
+      
       <%= render 'new_comment' %>
       <%= render 'comments' %>
 
-      <h2>Average Rating: <div class="rated" data-score="<%= @product.average_rating %>"></div> </h2>
+      <div class="digg_pagination">
+        <div class="page_info">
+        <%= page_entries_info @comments %>    
+        </div>
+        <%= will_paginate @comments,:container => false %>
+      </div>
 
     </div>
   </div>
