@@ -43,6 +43,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'rspec-rails', '~> 3.4'
+
+  gem "factory_girl_rails", "~> 4.0"
 end
 
 group :development do
