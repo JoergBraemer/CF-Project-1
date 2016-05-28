@@ -35,7 +35,6 @@ describe UsersController, :type => :controller do
         get :show, id: @user.id
         expect(response).to redirect_to(new_user_session_path)
       end
-
     end
   end
 end
