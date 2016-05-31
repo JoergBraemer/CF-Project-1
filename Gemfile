@@ -23,6 +23,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 ## Gemfile for Rails 3+, Sinatra, and Merb
 gem 'will_paginate', '~> 3.1.0'
 
+gem 'stripe'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -56,7 +58,7 @@ group :development do
   gem 'guard-rspec', require: false
 
   gem 'spork-rails'
-  
+
   gem 'guard-spork'
 end
 
