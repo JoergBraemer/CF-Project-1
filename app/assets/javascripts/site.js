@@ -1,8 +1,9 @@
 $(document).on('ready page:load', function(){
 	$('.img-zoom').elevateZoom({
-		zoomWindowPosition: 7,
+		zoomWindowPosition: 5,
 		zoomWindowWidth:150,
 		zoomWindowHeight:150,
+		zoomWindowOffety: -140,
 		responsive: true,
 		scrollZoom: true,
 		easing: true
